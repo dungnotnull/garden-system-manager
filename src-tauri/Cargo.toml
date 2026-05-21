@@ -1,0 +1,19 @@
+[package]
+name = "system-garden"
+version = "0.1.0"
+description = "A magical 3D garden that visualizes your system processes"
+authors = [""]
+edition = "2021"
+
+[lib]
+name = "system_garden_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sysinfo = "0.34"
