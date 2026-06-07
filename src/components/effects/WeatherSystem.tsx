@@ -31,39 +31,24 @@ export function WeatherSystem() {
   useFrame((_, delta) => {
     let targetIntensity = 1.2;
     let targetAmbient = 0.5;
-    let targetRayleigh = 2;
-    let targetTurbidity = 8;
-    let sunY = 20;
 
     switch (weather) {
       case "rainy":
         targetIntensity = 0.6;
         targetAmbient = 0.3;
-        targetRayleigh = 4;
-        targetTurbidity = 15;
-        sunY = 5;
         break;
       case "stormy":
         targetIntensity = 0.3;
         targetAmbient = 0.2;
-        targetRayleigh = 6;
-        targetTurbidity = 20;
-        sunY = 2;
         break;
       case "snowy":
         targetIntensity = 0.8;
         targetAmbient = 0.6;
-        targetRayleigh = 3;
-        targetTurbidity = 10;
-        sunY = 15;
         break;
       case "sunny":
       default:
         targetIntensity = 1.2;
         targetAmbient = 0.5;
-        targetRayleigh = 2;
-        targetTurbidity = 8;
-        sunY = 20;
         break;
     }
 

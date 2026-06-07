@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment, Cloud, Sky } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { GrassFloor } from "./GrassFloor";
 import { CreatureSpawner } from "./CreatureSpawner";

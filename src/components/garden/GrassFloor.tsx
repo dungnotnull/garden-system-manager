@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import * as THREE from "three";
-import { PALETTE } from "../../lib/palette";
 
 function SimpleTree({ position }: { position: [number, number, number] }) {
   return (
